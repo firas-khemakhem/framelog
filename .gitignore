@@ -1,0 +1,15 @@
+# Build output
+/build/
+/out/
+/install/
+
+# CMake user files
+CMakeUserPresets.json
+compile_commands.json
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+*.user
+*.swp
