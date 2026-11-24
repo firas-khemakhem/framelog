@@ -1,8 +1,10 @@
 # FrameLog
 
+[![ci](https://github.com/firas-khemakhem/framelog/actions/workflows/ci.yml/badge.svg)](https://github.com/firas-khemakhem/framelog/actions/workflows/ci.yml)
+
 A small C++20 CLI for filtering and summarising recorded frame logs. The product is deliberately narrow; the repository exists to show the **delivery pipeline around it**: cross-platform builds, tests, containers, security gates, packaging and tagged releases.
 
-> **Status: M0 foundation.** The binary currently supports `--version` and `--help`. The product commands (`inspect`, `filter`, `stats`, `gen`) and the delivery pipeline are the next milestones. Nothing here is production-ready.
+> **Status: M0 foundation — CI green on Linux and Windows.** The binary currently supports `--version` and `--help`. The product commands (`inspect`, `filter`, `stats`, `gen`) and the delivery pipeline are the next milestones. Nothing here is production-ready.
 >
 > This is a portfolio project. It contains no client code, customer data or proprietary protocol implementation.
 
@@ -73,7 +75,7 @@ The core library is split from the CLI so the parser, filters, statistics and re
 
 | Milestone | Outcome | Status |
 |---|---|---|
-| M0 — Foundation | CMake skeleton, `--version`/`--help`, one test, Linux + Windows CI | In progress |
+| M0 — Foundation | CMake skeleton, `--version`/`--help`, one test, Linux + Windows CI | CI green |
 | M1 — Core product | `.flog` v1 format, reader/writer, filter, stats, generator, fixtures | Planned |
 | M2 — Delivery | Multi-stage Docker, CPack packages, GHCR image, tagged `v0.1.0` release | Planned |
 | M3 — Quality and security | CodeQL, dependency review, Trivy, SBOM, coverage gate, ADRs | Planned |
