@@ -42,7 +42,7 @@ cmake --build --preset macos-release
 ctest --preset macos-release
 ```
 
-Windows (Visual Studio 2022):
+Windows (Visual Studio 2022 or newer):
 
 ```powershell
 cmake --preset windows-release
@@ -50,7 +50,7 @@ cmake --build --preset windows-release
 ctest --preset windows-release
 ```
 
-The binary is written to `build/<preset>/framelog` (Visual Studio adds a `Release/` directory).
+The binary is written to `build/<preset>/framelog` (Visual Studio adds a `Release/` directory). The Windows preset uses whichever Visual Studio generator is installed, so it works with both VS 2022 and VS 2026 runners.
 
 ## Repository layout
 
